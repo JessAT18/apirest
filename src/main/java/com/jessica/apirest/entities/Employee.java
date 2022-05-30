@@ -11,7 +11,7 @@ public class Employee {
     //private String name;
     private String firstName;
     private String lastName;
-    private String role;
+    private String erole;
 
     Employee(){}
 
@@ -19,7 +19,7 @@ public class Employee {
         //this.name = name;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.role = role;
+        this.erole = role;
     }
 
     public Long getId() {
@@ -58,12 +58,12 @@ public class Employee {
         this.lastName = lastName;
     }
 
-    public String getRole() {
-        return role;
+    public String getErole() {
+        return erole;
     }
 
-    public void setRole(String role) {
-        this.role = role;
+    public void setErole(String erole) {
+        this.erole = erole;
     }
 
     @Override
@@ -72,18 +72,18 @@ public class Employee {
         if (o == null || getClass() != o.getClass()) return false;
         Employee employee = (Employee) o;
         //return Objects.equals(id, employee.id) && Objects.equals(name, employee.name) && Objects.equals(role, employee.role);
-        return Objects.equals(id, employee.id) && Objects.equals(firstName, employee.firstName) && Objects.equals(lastName, employee.lastName)  && Objects.equals(role, employee.role);
+        return Objects.equals(id, employee.id) && Objects.equals(firstName, employee.firstName) && Objects.equals(lastName, employee.lastName)  && Objects.equals(erole, employee.erole);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, firstName, lastName, role);
+        return Objects.hash(id, firstName, lastName, erole);
     }
 
     @Override
     public String toString(){
         //return "Employee{" + "id=" + this.id + ", name='" + this.name + '\'' + ", role='" + this.role + '\'' + '}';
-        return "Employee{" + "id=" + this.id + ", firstName='" + this.firstName + ", lastName='" + this.lastName + '\'' + ", role='" + this.role + '\'' + '}';
+        return "Employee{" + "id=" + this.id + ", firstName='" + this.firstName + ", lastName='" + this.lastName + '\'' + ", role='" + this.erole + '\'' + '}';
 
     }
 
